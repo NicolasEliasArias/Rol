@@ -6,7 +6,7 @@ const Inicio = (props) => {
     return (
         <Fragment>
             <div className={styles.Presentation}>
-                <h1>TITULO DEL INICIO</h1>
+                <h1>TITULO DEL INICIO Otra vez</h1>
             </div>
 
             <div className={styles.Inicio}>
