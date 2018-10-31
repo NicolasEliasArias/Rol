@@ -1,0 +1,17 @@
+.Layout{
+    width: 100%;
+    display: flex;
+}
+
+.Main{
+    width: calc(87% - 0em);
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+}
+
+@media (max-width: 770px){
+    .Main{
+        width: 100%;
+    }
+}

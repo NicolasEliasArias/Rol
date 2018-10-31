@@ -1,0 +1,106 @@
+/*Item del Carrusel completo*/
+.CarouselItem{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+}
+
+/*Titulo del carrusel*/
+.CarouselItem h1{
+    left: calc(8.3333vw - 1.3333rem);
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Optia", sans-serif;
+    font-size: 3.5em;
+    z-index: 200;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    max-width: 600px;
+}
+@font-face {
+    font-family: 'Optia';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('../../../fonts/OPTIAkrogroteskBold-Cond.otf');
+  }
+
+  /*Palabra del titulo*/
+.Word{
+    margin-right: 4%;
+    display: inline-block;
+}
+
+/*letras de cada palabra (y sus efectos)*/
+.Letter{
+    position: relative;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 1;
+    transition: all 0.3s linear;
+    transform-origin: 0% 50% 0px;
+}
+/*De active va a prev, y de prev va a inactive*/
+.LetterActive{
+    visibility: inherit;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.LetterPrev{
+    opacity: 0;
+    transform: matrix3d(0.996195, 0.0871557, 0, 0, 0, 0, 1, 0, 0.0871557, -0.996195, 0, 0, 5.22934, -59.7717, -60, 1);
+}
+.LetterInactive{
+    transform: matrix3d(0.996195, 0.0871557, 0, 0, 0, 0, 1, 0, 0.0871557, -0.996195, 0, 0, 5.22934, 59.7717, -60, 1);
+}
+/*FIN--Letras*/
+
+/*Imagen de cada item del carrusel (y sus efectos)*/
+.CarouselImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*La transicion transform (all en este caso) tiene que coincidir con el setInterval de Carousel.js*/
+    transition: all 9s linear, opacity 0.7s ease-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transform: scale(1.26) translate(0,0);
+    opacity: 1;
+}
+
+/*Por ahora tenemos dos efectos diferentes*/
+.Item_active_1{
+    opacity: 1;
+}
+.Img_active_1{
+    transform: scale(1.2) translate(2%,4%);
+}
+.Item_active_2{
+    opacity: 1;
+}
+.Img_active_2{
+    transform: scale(1.2) translate(-2%,-4%);
+}
+.Item_inactive{
+    opacity: 0;
+}
+.Img_inactive{
+    transform: scale(1.26) translate(0,0);
+}
+/*FIN--Imagen de los items*/
+
+
+
+/*Mobil*/
+@media (max-width: 770px){
+    .CarouselItem h1{
+        font-size: 2em;
+        left: calc(16.6666vw - 1.3333rem);
+        max-width: calc(90vw - 1.3333rem);
+    }
+}

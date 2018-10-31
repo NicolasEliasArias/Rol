@@ -1,0 +1,22 @@
+.Menu{
+    width: 60%;
+    height: 4px;
+    margin: auto;
+    margin-top: 18%;
+    position: relative;
+    margin-bottom: 15%;
+    background-color: black;
+    /*Es buena idea que esta transision coinciada con la de ButtonDrawer*/
+    transition: transform 0.4s ease-out, opacity 0.1s linear;
+    opacity: 1;
+}
+
+.MenuTop{
+    transform: translateY(12px) rotate(50deg);
+}
+.MenuMiddle{
+    opacity: 0;
+}
+.MenuBottom{
+    transform: translateY(-11px) rotate(-50deg);
+}

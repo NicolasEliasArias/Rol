@@ -1,0 +1,138 @@
+.SideNavBar{
+    width: calc(15.0% - 0em);
+    margin-left: 0;
+    margin-right: 0;
+    position: sticky;
+    top: 0;
+    min-width: 12em;
+    max-height: 100vh;
+    z-index: 1000;
+    box-sizing: inherit;
+    box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+    
+
+
+    /*background: #ff670f; 
+    background: -moz-linear-gradient(top, #ff670f 0%, #ffb991 19%, #ffffff 25%); 
+    background: -webkit-linear-gradient(top, #ff670f 0%,#ffb991 19%,#ffffff 25%); 
+    background: linear-gradient(to bottom, #ff670f 0%,#ffb991 19%,#ffffff 25%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ffffff',GradientType=0 );*/
+
+    background: rgb(100,103,120); 
+    background: -moz-linear-gradient(top, rgba(100,103,120,1) 0%, rgba(125,129,147,1) 14%, rgba(255,255,255,1) 27%); 
+    background: -webkit-linear-gradient(top, rgba(100,103,120,1) 0%,rgba(125,129,147,1) 14%,rgba(255,255,255,1) 27%); 
+    background: linear-gradient(to bottom, rgba(100,103,120,1) 0%,rgba(125,129,147,1) 14%,rgba(255,255,255,1) 27%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#646778', endColorstr='#ffffff',GradientType=0 );
+
+}
+
+.SideNavBar nav{
+    margin-top: 50px;
+    text-align: left;
+}
+
+
+/* PARTES DE LA SideNavBar----------------INICIO*/
+/*Efecto de sidenavbar y de part
+@media (min-width: 770px){
+    .Part{
+        background-color: white;
+        height: 25%;
+        transform: translateX(0px);
+        box-shadow: none;
+    }
+    .PartActive{
+        animation: part_shadow_slide_in 1.0s ease-in-out backwards;
+    }
+    .PartInactive{
+        animation: part_shadow_slide_out 1.0s ease-in-out forwards;
+    }
+
+    @keyframes part_shadow_slide_in {
+        0%{
+            transform: translateX(-600px);
+            box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+        }
+        50%{
+            transform: translateX(0px);
+            box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+        }
+        100%{
+            transform: translateX(0px);
+            box-shadow: none;
+        }
+    }
+
+    @keyframes part_shadow_slide_out {
+        0%{
+            box-shadow: none;
+            transform: translateX(0px);
+        }
+        50%{
+            box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+            transform: translateX(0px);
+        }
+        100%{
+            box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+            transform: translateX(-600px);
+        }
+    }
+
+    .SideNavBarActive{
+        animation: SideNavBar_shadow_in 1.4s ease-in forwards;
+    }
+    .SideNavBarInactive{
+        animation: SideNavBar_shadow_out 0.97s ease-out forwards;
+    }
+    @keyframes SideNavBar_shadow_in {
+        0%{
+            box-shadow: none;
+        }
+        50%{
+            box-shadow: none;
+        }
+        100%{
+            box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+        }
+    }
+
+    @keyframes SideNavBar_shadow_out {
+        0%{
+            box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+        }
+        50%{
+            box-shadow: 8px 0 15px -4px rgba(0, 1, 2, 0.8);
+        }
+        100%{
+            box-shadow: none;
+        }
+    }
+    
+}
+
+.LogoPart{
+
+    background: rgb(100,103,120);
+    background: -moz-linear-gradient(top, rgba(100,103,120,1) 0%, rgba(100,103,120,1) 55%, rgba(164,164,178,1) 78%, rgba(255,255,255,1) 94%); 
+    background: -webkit-linear-gradient(top, rgba(100,103,120,1) 0%,rgba(100,103,120,1) 55%,rgba(164,164,178,1) 78%,rgba(255,255,255,1) 94%); 
+    background: linear-gradient(to bottom, rgba(100,103,120,1) 0%,rgba(100,103,120,1) 55%,rgba(164,164,178,1) 78%,rgba(255,255,255,1) 94%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#646778', endColorstr='#ffffff',GradientType=0 );
+
+
+}
+FIN ---------------- PARTES DE LA SideNavBar*/
+
+
+@media (max-width: 770px){
+    .SideNavBar{
+        position: fixed;
+        height: 100%;
+        transform: translateX(-200px);
+        transition: transform 0.3s ease-out;
+
+    }
+    .slide{
+        transform: translateX(0);
+    }
+    
+}

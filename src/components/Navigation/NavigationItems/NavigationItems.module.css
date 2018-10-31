@@ -1,0 +1,15 @@
+.NavigationItems{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+
+
+@font-face {
+    font-family: 'CircularStd';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('../../../fonts/CircularStd-BookItalic.otf');
+  }
